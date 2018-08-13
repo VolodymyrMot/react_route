@@ -11,7 +11,7 @@ const AppRouter = () => (
     <div id="container">
       <Header />
       <Switch>
-        <Route path="/posts" component={Articles} exact={true} />
+        <Route path="/" component={Articles} exact={true} />
         <Route path="/post/:id" component={Article} />
         <Route path="/user/:id" component={User} />
       </Switch>

@@ -29,11 +29,11 @@ class Comments extends Component{
 class Item extends Component{
     render(){
         const {article} = this.props;
-        console.log(this.props);
+        console.log('uuuuuuuu',this.props);
         return(
-            <div key={article.id}>
-                <h1>{article.title}</h1>
-                <p>{article.body}</p>
+            <div key={article[0].id}>
+                <h1>{article[0].title}</h1>
+                <p>{article[0].body}</p>
             </div>
         )
     }
@@ -43,7 +43,7 @@ class Article extends Component{
     render(){
         return(
             <div className="content">
-                <Item article={this.props.posts[this.props.match.params.id]}/>
+                <Item article={this.props.posts.filter(item => item.id == this.props.match.params.id)}/>
                 <Comments comment={this.props.comments.filter(item => item.postId == this.props.match.params.id)}/>
             </div>
         )

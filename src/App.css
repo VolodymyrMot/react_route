@@ -28,7 +28,7 @@ h1:first-letter, p:first-letter, h3:first-letter{
 }
 .item{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     border-bottom: 1px solid #dedede;
     text-decoration: none;
 }
@@ -46,4 +46,25 @@ h1:first-letter, p:first-letter, h3:first-letter{
 }
 h3 span{
     font-size: 16px;
+}
+.addPost{
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+input{
+    margin: 10px;
+    width: 60%;
+    height: 25px;
+}
+textarea{
+    margin: 10px;
+    width: 90%;
+    height: 80px;
+}
+.btn{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
 }
